@@ -1,0 +1,12 @@
+package com.merchant.app.dao;
+
+import com.merchant.app.entity.User;
+import java.util.Optional;
+
+public interface UserDao {
+    User save(User user);
+
+    Optional<User> findByEmail(String email);
+
+    boolean existsByEmail(String email);
+}
