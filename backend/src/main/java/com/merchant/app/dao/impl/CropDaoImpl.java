@@ -29,4 +29,9 @@ public class CropDaoImpl implements CropDao {
     public List<Crop> findByFarmerId(Long farmerId) {
         return cropRepository.findByFarmerId(farmerId);
     }
+
+    @Override
+    public List<Crop> findByNameContaining(String name) {
+        return cropRepository.findByNameContaining(name);
+    }
 }

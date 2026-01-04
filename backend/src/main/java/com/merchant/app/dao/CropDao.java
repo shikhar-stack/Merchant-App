@@ -10,4 +10,6 @@ public interface CropDao {
     Optional<Crop> findById(Long id);
 
     List<Crop> findByFarmerId(Long farmerId);
+
+    List<Crop> findByNameContaining(String name);
 }

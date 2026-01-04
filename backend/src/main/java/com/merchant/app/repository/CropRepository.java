@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface CropRepository extends JpaRepository<Crop, Long> {
     List<Crop> findByFarmerId(Long farmerId);
+
+    List<Crop> findByNameContaining(String name);
 }
